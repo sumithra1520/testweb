@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web myprofile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./taskweb.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 4em;">
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand boarder-bottom">
+                <button class="toggler-btn" type="button">
+                 <i class="fa-solid fa-bars"></i>
+                </button>
+             </nav>
+
+            <form class="d-flex" role="search" style="width: 17%; margin-left: -33em;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: unset;">
+                <i class="fa-solid fa-magnifying-glass" id="ico2"></i>
+            </form>
+       <div>
+         
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+             <li class="nav-item dropdown-1" id="notic">
+                    <a class="nav-link dropdown-toggle notification-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;   color: rgb(8, 8, 85);">
+                        <div class="count">+4</div>
+                        <i class="fa-sharp fa-regular fa-bell" id="ico3"></i>
+                    </a>
+                    
+                    <ul class="dropdown-menu" style="margin-left:-15rem; margin-top:3px; border-radius:2px; width:22rem; border: unset;  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                        <li><div id="b-o-x">hello</div></li>
+
+                    <li><a class="dropdown-item" href="#">
+                        <h5 style="text-align: center; color: rgb(6, 6, 65);font-size:17px;">You have 4 new notification 
+                            <button style="background-color: blue; color:white;border-radius:23px;margin-top: 2px;height:33px;width:78px;">view all</button></h5>
+                    </li>
+
+                    <li><hr class="dropdown-divider" style="margin-left:-18px;width:111%;"></li>
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-circle-exclamation"></i>Lorem ipsum</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">30 mins. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-regular fa-circle-xmark"></i>Atque rerum nesciunt</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">1 hr. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                   <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                    <i class="fa-regular fa-circle-check"></i>Site rerum fuga</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">2 hrs. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-circle-info"></i>Site rerum fuga</a>
+                             <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                             <div style="margin-top:-14px;margin-left:70px;">2 hrs. ago </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                     <a href="#" id="show1" style="margin-left:103px;color: black;font-size:20px;">show all notification</a>
+                    
+                    </ul>
+          </li>
+         
+
+          <li class="nav-item dropdown-1" id="mess">
+            <a class="nav-link dropdown-toggle notification-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;color: rgb(8, 8, 85);">
+                <div class="count1">+3</div>
+                <i class="fa-regular fa-message" id="ico4"></i>
+            </a>
+            
+            <ul class="dropdown-menu" style="margin-left:-16rem; margin-top:3px; border-radius:2px; width:23rem; border: unset;filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                <li><div id="b-o-x">hello</div></li>
+
+            <li><a class="dropdown-item" href="#">
+                <h5 style="text-align: center; color: rgb(6, 6, 65);font-size:17px;">You have 3 new notification 
+                    <button style="background-color: blue; color:white;border-radius:23px;margin-top: 2px;height:33px;width:78px;">view all</button></h5>
+            </li>
+
+            <li><hr class="dropdown-divider" style="margin-left:-18px;width:111%;"></li>
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top: -18px;">
+                <img src="./img/photo2.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">4 hrs. ago  </div>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top:-2px;">
+                <img src="./img/photo3.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">6 hrs. ago  </div>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top:0px;">
+                <img src="./img/photo1.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">8 hrs. ago  </div>
+            </li>
+            
+                <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+             <a href="#" id="show1" style="margin-left:103px;color: black;font-size:20px;">show all notification</a>
+            
+            </ul>
+  </li>
+
+
+              <li class="nav-item pic">
+                <img src="./img/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig - Copy.jpg" class="pic">
+              </li>
+
+              
+
+              <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;   color: rgb(8, 8, 85);">
+                            k. Anderson
+                        </a>
+                        
+                        <ul class="dropdown-menu" style="margin-left:-12rem; margin-top:3px; border-radius:2px; width: 18rem; border: unset;  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                            <li><div id="b-o-x">hello</div></li>
+
+                        <li><a class="dropdown-item" href="#">
+                            <h1 style="font-size:25px; text-align: center; color: rgb(6, 6, 65);">Kevin Anderson</h1>
+                            <h3 style="font-size:20px;color: gray;text-align: center;">Web Designer</h3></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./taskmyprofile.html" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-regular fa-user"></i>My Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-solid fa-gear"></i>Account Setting</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./taskneedhelp.html" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-regular fa-circle-question"></i>Neeed Help?</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>Sing Out</a></li>
+                        
+                        </ul>
+              </li>
+             
+            </ul>
+        </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    <!-------sidebar------->
+      <div class="s-i-d " style="display: flex;" >
+
+         <aside id="sidebar" style="overflow-y:scroll;height:650%;">
+           
+            <ul class="sidebar-nav p-0">
+               
+                
+               <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                  <i class="fas fa-qrcode"></i>  
+                  <span>Dashboard</span></a>
+                </li>
+                
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#comp" 
+                    aria-expanded="true" aria-controls="comp">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Components</span>
+                    </a>
+                    <ul id="comp" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Alerts</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">According</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Badges</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Breadcrumbs</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Buttons</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Cards</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Carousel</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">List group</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Modal</a>
+                        </li>
+
+                    </ul>
+                 </li>
+             
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#form" 
+                    aria-expanded="true" aria-controls="form">
+                    <i class="fa-solid fa-file"></i>
+                    <span>Form</span>
+                    </a>
+                    <ul id="form" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Form Element</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Layouts</a>
+                        </li>
+                       
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Editors</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Validation</a>
+                        </li>
+
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Tables" 
+                    aria-expanded="true" aria-controls="forms">
+                    <i class="fa-solid fa-table"></i>
+                    <span>Tables</span>
+                    </a>
+                    <ul id="Tables" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">General Tables</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Data Tablesr</a>
+                          </li>
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#chart" 
+                    aria-expanded="true" aria-controls="chart">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Charts</span>
+                    </a>
+                    <ul id="chart" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Chart.js</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">ApexCharts</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">ECharts</a>
+                        </li>
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#icon" 
+                    aria-expanded="true" aria-controls="icon">
+                    <i class="fa-regular fa-gem"></i>
+                    <span>Icons</span>
+                    </a>
+                    <ul id="icon" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Bootstrap Icons</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Remix Iconsr</a>
+                          </li>
+
+                          <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Boxicons</a>
+                          </li>
+                    </ul>
+                 </li>
+                    
+
+                 <li class="sidebar-header" style="color: gray; font-size: 20px;">
+                    pages
+                </li> 
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-user"></i> 
+                    <span>Profile</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-question"></i> 
+                    <span>F.A.Q</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Contact</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-file-pen"></i> 
+                    <span>Register</span></a>
+                </li>
+
+            </ul>
+         </aside>
+
+
+
+
+
+
+    <div class="main">
+            
+          <main class="p-3">
+            <div class="container-fluid">
+                <div id="my-profial-task">
+                    <div id="memo">
+                        <div >
+                            <h1 style="font-size: 2.5em;color: rgb(5, 5, 62);">Profile</h1>
+                             <div id="home" style="margin-left: -3px;margin-top: -12px;font-size: 17px;">
+                                <a href="#">Home</a>  /
+                                <a href="#">Users</a>  /
+                                <a href="#" style="color: rgb(9, 9, 68);">Profile</a>
+                             </div>
+                         </div>
+                          
+                         <div id="boxes" style="display: flex;">
+
+                            <div id="box1">
+                                <img src="./img/img.jpg" id="img">
+                                <div id="ke">Kevin Anderson</div>
+                             <div id="web">Web Designer</div>
+                            
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                             
+                            </div>
+
+                            <div id="box2-container">
+                                <input type="radio" name="slider" id="over" checked>
+                                <input type="radio" name="slider" id="Edit_profial">
+                                <input type="radio" name="slider" id="Setting">
+                                <input type="radio" name="slider" id="Change_password">
+                                  <nav>
+                                    <label for="over" class="Over">Overview</label>
+                                    <label for="Edit_profial" class="Edit_profial">Edit Profile</label>
+                                    <label for="Setting" class="Setting">Setting</label>
+                                    <label for="Change_password" class="Change_password">Change password</label>
+            
+                                    <div class="slider"></div>
+                                  </nav>
+            
+            
+            
+                     <div id="section">
+                            <div class="content content-1">
+                                     <div class="title">About
+                                     </div>
+                                     <span style="color: #07074f96;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quod. 
+                                        dfcvnbsm</span>
+                                        <span style="color: #07074f96;"> Tempora libero non est unde veniam est qui dolor. Ut sunt iure 
+                                            rerum quae quisquam gvdnbnc </span>
+                                           <span style="color: #07074f96;">sgdv jhxcgbnmsdn ftvc zgjashbd hskb nsfutt</span> 
+                                    
+            
+                                    <div class="title-1">Profile Details</div>   
+                                      <div id="form">
+                                        <div id="NAME" style="display: flex;">
+                                            <div class="NA">
+                                                <h3>First Name</h3>
+                                            </div>
+                                            <div id="NA">
+                                                Kevin Anderson
+                                            </div>
+                                        </div>
+                                         
+                                        <div id="COMP" style="display: flex;">
+                                            <div class="CO">
+                                                <h3>Company</h3>
+                                            </div>
+                                            <div id="CO">
+                                                Lueilwitz, Wisoky and Leuschke
+                                            </div>
+                                        </div>
+                    
+                                        <div id="COU" style="display: flex;">
+                                            <div class="CU">
+                                                <h3>Job</h3>
+                                            </div>
+                                            <div id="CU" style="   margin-left: 207px;font-size: 29px;font-weight: 400; color: #100f2cc6;">
+                                                Web Designer
+                                            </div>
+                                        </div>
+                    
+                                        <div id="COUN" style="display: flex;">
+                                            <div class="CON">
+                                                <h3>Country</h3>
+                                            </div>
+                                            <div id="CON" style="margin-left: 154px; font-size: 29px;font-weight: 400;color: #100f2cc6;">
+                                                USA
+                                            </div>
+                                        </div>
+                    
+                                        <div id="ADD" style="display: flex;">
+                                            <div class="AD">
+                                                <h3>Address</h3>
+                                            </div>
+                                            <div id="AD" style="   margin-left: 154px;font-size: 29px;  font-weight: 400; color: #100f2cc6;">
+                                                A 108 Adam Street, New York, NY 535022
+                                            </div>
+                                        </div>
+                    
+                                        <div id="PHONE" style="display: flex;">
+                                            <div class="PH">
+                                                <h3>Phone</h3>
+                                            </div>
+                                            <div id="PH" style="   margin-left: 173px;font-size: 29px;  font-weight: 400;color: #100f2cc6;">
+                                               (438) 486 3538 x2682
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="EMAIL" style="display: flex;">
+                                            <div class="EM">
+                                                <h3>Email</h3>
+                                            </div>
+                                            <div id="EM" style="   margin-left: 182px; font-size: 29px;font-weight: 400;color: #100f2cc6;">
+                                              kanhdnhj@example.com
+                                            </div>
+                                        </div>
+                                  </div>
+                             </div>
+
+
+                             <div class="content content-2">
+                                <div class="title" style="display: flex;margin-left: -24%;">Profile Image
+                                    <img src="./img/img.jpg" id="my" style="width:6.5em; margin-left: 20px;">
+                                </div>
+
+                                <button id="btn1"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                <button id="btn2"><i class="fa-solid fa-trash"></i></button>
+
+                                <div id="Edit_from">
+                                    
+                                    <div class="mb-3 row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">First Name</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value=" Kevin Anderson" style="height: 64%;">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputname" class="col-sm-2 col-form-label">About</label>
+                                        <div class="col-sm-10">
+                                            <textarea rows="5" cols="17" placeholder="Sunt est soluta temporibus accusantium neque nam maiores cumque  temporibus.Tempora libero non est unde veniam est qui dolor. Ut sunt iure  rerum quae quisquam autem eveniet sgubhnd gushdba hud ndgsh uiwiekwr,nk suudb sd ahihoma wdwkfh;djf mwnegyi wdgyidgenw r gyhaefkne perspiciatis odit. Fuga sequi sed ea saepe at unde."></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Company</label>
+                                        <div class="col-sm-10">
+                                          <input type="Nmae" class="form-control" id="inputname" value=" Lueilwitz, Wisoky and Leuschke">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Job</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value="   Web Designer ">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Country</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value=" USA">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Address</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value="    A 108 Adam Street, New York, NY 535022">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputname" class="col-sm-2 col-form-label">Phone</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value=" +(438) 486 3538 x2682">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                          <input type="Email" class="form-control" id="inputemail" value="   kanhdnhj@example.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputName" class="col-sm-2 col-form-label" >Twitter Profile</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value=" hhtps://twitter.com/#" style="height: 64%;">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputNmae" class="col-sm-2 col-form-label">Facebook profile</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value=" hhtps://facebook.com/#" style="height: 64%;">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputNmae" class="col-sm-2 col-form-label">Instragram Profile</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value=" hhtps://intragram.com/#" style="height: 64%;">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label for="inputNmae" class="col-sm-2 col-form-label">Linkedin Profile</label>
+                                        <div class="col-sm-10">
+                                          <input type="Name" class="form-control" id="inputname" value=" hhtps://linkedin.com/#" style="height: 64%;">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button id="save" style="    margin-left: 27%;">Save Change</button>
+                             </div>
+
+                             <div class="content content-3">
+                                <div style="display: flex;"> 
+
+                                    <div id="setting">
+                                        <div class="title" style="font-size: 27px ;color: #0e1143;margin-left: -5em;">Email</div>
+                                        <div class="sett">
+                                        <h3 style="font-size: 27px;color: #0e1143; margin-left: -17px;margin-top: 23px;margin-left: -5em;">Notifications</h3>
+                                        </div>
+                                   </div> 
+
+                                   <div style="font-size:134%;margin-left:24%;margin-top:9%;color: #070751;">
+
+                                   <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                     Change made to your account
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                    Information on new products and serivers
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Markiing and promo offers
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                        Security alert
+                                    </label>
+                                  </div>
+
+                                  <button id="save" style="margin-left: -3%;">Save changes</button>
+                                </div> 
+                                </div>
+                             </div>
+                           
+                             <div class="content content-4" style="margin-top: 6%; margin-left: -40%;color: #070751; font-weight:400;    font-size: 23px;">
+
+                                <div class="mb-3 row">
+                                    <label for="inputName" class="col-sm-2 col-form-label">Current Password</label>
+                                    <div class="col-sm-10">
+                                      <input type="Name" class="form-control" id="inputname"  style="height: 64%;">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="inputname" class="col-sm-2 col-form-label">New Password </label>
+                                    <div class="col-sm-10">
+                                        <input type="Name" class="form-control" id="inputname"  style="height: 64%;">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="inputName" class="col-sm-2 col-form-label" style=" white-space: nowrap;">Re-enter <br> New Password</label>
+                                    <div class="col-sm-10">
+                                      <input type="Nmae" class="form-control" id="inputname" style="height: 64%;">
+                                    </div>
+                                </div>
+                                <button id="save" style=" margin-left: 67%;">Save changes</button>
+
+                             </div>
+                             
+
+
+
+
+
+
+                     </div>
+
+
+
+            
+            
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+     </main>  
+</div>
+
+</div>
+
+    
+         
+
+      
+
+<footer>
+    <hr style="color: #3d3dec;">
+    <div id="footer" style="display: flex; color: #3d3dec;justify-content: center;">
+        <h2 style="text-align: center;color: #3d3dec;">C</h2>
+        <h1 style="font-size:20px;margin-left:4px;">CopyRight</h1>
+        <h1 style="font-size:20px;margin-left:10px;color: #070751;">NiceAdmin.</h1>
+        <h1 style="font-size:20px;">All Right Reserved</h1>
+    </div>
+    <div style="text-align: center;">
+        <h1 style="font-size: 20px; color: #3d3dec;">Designer By BootstrapMade</h1>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+
+   const toggler = document.querySelector(".toggler-btn");
+const sidebar = document.querySelector("#sidebar");
+
+// Function to toggle sidebar
+function toggleSidebar() {
+    sidebar.classList.toggle("collapsed");
+
+    // Save state to localStorage
+    if (sidebar.classList.contains("collapsed")) {
+        localStorage.setItem("sidebarState", "collapsed");
+    } else {
+        localStorage.setItem("sidebarState", "expanded");
+    }
+}
+
+// Event listener for the toggle button
+toggler.addEventListener("click", toggleSidebar);
+
+// Check localStorage on page load
+document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("sidebarState") === "collapsed") {
+        sidebar.classList.add("collapsed");
+    }
+});
+
+
+
+
+    </script>
+</body>
+</html>

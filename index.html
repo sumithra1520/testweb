@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./taskweb.css">
+</head>
+ <link rel="stylesheet" href="_/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 4em;">
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand boarder-bottom">
+                <button class="toggler-btn" type="button">
+                 <i class="fa-solid fa-bars"></i>
+                </button>
+             </nav>
+
+            <form class="d-flex" role="search" style="width: 17%; margin-left: -33em;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: unset;">
+                <i class="fa-solid fa-magnifying-glass" id="ico2"></i>
+            </form>
+       <div>
+         
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+             <li class="nav-item dropdown-1" id="notic">
+                    <a class="nav-link dropdown-toggle notification-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;   color: rgb(8, 8, 85);">
+                        <div class="count">+4</div>
+                        <i class="fa-sharp fa-regular fa-bell" id="ico3"></i>
+                    </a>
+                    
+                    <ul class="dropdown-menu" style="margin-left:-15rem; margin-top:3px; border-radius:2px; width:22rem; border: unset;  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                        <li><div id="b-o-x">hello</div></li>
+
+                    <li><a class="dropdown-item" href="#">
+                        <h5 style="text-align: center; color: rgb(6, 6, 65);font-size:17px;">You have 4 new notification 
+                            <button style="background-color: blue; color:white;border-radius:23px;margin-top: 2px;height:33px;width:78px;">view all</button></h5>
+                    </li>
+
+                    <li><hr class="dropdown-divider" style="margin-left:-18px;width:111%;"></li>
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-circle-exclamation"></i>Lorem ipsum</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">30 mins. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-regular fa-circle-xmark"></i>Atque rerum nesciunt</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">1 hr. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                   <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                    <i class="fa-regular fa-circle-check"></i>Site rerum fuga</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">2 hrs. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-circle-info"></i>Site rerum fuga</a>
+                             <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                             <div style="margin-top:-14px;margin-left:70px;">2 hrs. ago </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                     <a href="#" id="show1" style="margin-left:103px;color: black;font-size:20px;">show all notification</a>
+                    
+                    </ul>
+          </li>
+         
+
+          <li class="nav-item dropdown-1" id="mess">
+            <a class="nav-link dropdown-toggle notification-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;color: rgb(8, 8, 85);">
+                <div class="count1">+3</div>
+                <i class="fa-regular fa-message" id="ico4"></i>
+            </a>
+            
+            <ul class="dropdown-menu" style="margin-left:-16rem; margin-top:3px; border-radius:2px; width:23rem; border: unset;filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                <li><div id="b-o-x">hello</div></li>
+
+            <li><a class="dropdown-item" href="#">
+                <h5 style="text-align: center; color: rgb(6, 6, 65);font-size:17px;">You have 3 new notification 
+                    <button style="background-color: blue; color:white;border-radius:23px;margin-top: 2px;height:33px;width:78px;">view all</button></h5>
+            </li>
+
+            <li><hr class="dropdown-divider" style="margin-left:-18px;width:111%;"></li>
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top: -18px;">
+                <img src="./img/photo2.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">4 hrs. ago  </div>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top:-2px;">
+                <img src="./img/photo3.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">6 hrs. ago  </div>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top:0px;">
+                <img src="./img/photo1.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">8 hrs. ago  </div>
+            </li>
+            
+                <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+             <a href="#" id="show1" style="margin-left:103px;color: black;font-size:20px;">show all notification</a>
+            
+            </ul>
+  </li>
+
+
+              <li class="nav-item pic">
+                <img src="./img/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig - Copy.jpg" class="pic">
+              </li>
+
+              
+
+              <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;   color: rgb(8, 8, 85);">
+                            k. Anderson
+                        </a>
+                        
+                        <ul class="dropdown-menu" style="margin-left:-12rem; margin-top:3px; border-radius:2px; width: 18rem; border: unset;  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                            <li><div id="b-o-x">hello</div></li>
+
+                        <li><a class="dropdown-item" href="#">
+                            <h1 style="font-size:25px; text-align: center; color: rgb(6, 6, 65);">Kevin Anderson</h1>
+                            <h3 style="font-size:20px;color: gray;text-align: center;">Web Designer</h3></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./taskmyprofile.html" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-regular fa-user"></i>My Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-solid fa-gear"></i>Account Setting</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./taskneedhelp.html" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-regular fa-circle-question"></i>Neeed Help?</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>Sing Out</a></li>
+                        
+                        </ul>
+              </li>
+             
+            </ul>
+        </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    <!-------sidebar------->
+      <div class="s-i-d " style="display: flex;" >
+
+         <aside id="sidebar" style="overflow-y:scroll;height:650%;">
+           
+            <ul class="sidebar-nav p-0">
+               
+                
+               <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                  <i class="fas fa-qrcode"></i>  
+                  <span>Dashboard</span></a>
+                </li>
+                
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#comp" 
+                    aria-expanded="true" aria-controls="comp">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Components</span>
+                    </a>
+                    <ul id="comp" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Alerts</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">According</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Badges</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Breadcrumbs</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Buttons</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Cards</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Carousel</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">List group</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Modal</a>
+                        </li>
+
+                    </ul>
+                 </li>
+             
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#form" 
+                    aria-expanded="true" aria-controls="form">
+                    <i class="fa-solid fa-file"></i>
+                    <span>Form</span>
+                    </a>
+                    <ul id="form" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Form Element</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Layouts</a>
+                        </li>
+                       
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Editors</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Validation</a>
+                        </li>
+
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Tables" 
+                    aria-expanded="true" aria-controls="forms">
+                    <i class="fa-solid fa-table"></i>
+                    <span>Tables</span>
+                    </a>
+                    <ul id="Tables" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">General Tables</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Data Tablesr</a>
+                          </li>
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#chart" 
+                    aria-expanded="true" aria-controls="chart">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Charts</span>
+                    </a>
+                    <ul id="chart" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Chart.js</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">ApexCharts</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">ECharts</a>
+                        </li>
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#icon" 
+                    aria-expanded="true" aria-controls="icon">
+                    <i class="fa-regular fa-gem"></i>
+                    <span>Icons</span>
+                    </a>
+                    <ul id="icon" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Bootstrap Icons</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Remix Iconsr</a>
+                          </li>
+
+                          <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Boxicons</a>
+                          </li>
+                    </ul>
+                 </li>
+                    
+
+                 <li class="sidebar-header" style="color: gray; font-size: 20px;">
+                    pages
+                </li> 
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-user"></i> 
+                    <span>Profile</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-question"></i> 
+                    <span>F.A.Q</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Contact</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-file-pen"></i> 
+                    <span>Register</span></a>
+                </li>
+
+            </ul>
+         </aside>
+
+        <div class="main">
+            
+            <div id="homepage">
+
+                <div>
+                    <div id="fpa">
+                        <h1 style="font-size:1.5em;">
+                            Dashboard
+                        </h1>
+                    </div>
+                    <div id="fp">
+                        <h3 style="font-size: 17px;">Home  /</h3> 
+                        <h3 style="font-size: 17px;color: #070751bd;"> Dashboard</h3>
+                    </div>
+                </div>
+
+                <div id="chart_one">
+                     
+
+                    <div class="chart_one"> <!-- -------------------------.chart_one start------------------- -->
+
+
+                        <div class="chart_cart_1" style="display: flex;">
+
+                            <div id="chart_cart_1"> <!-- -------------------------1box------------------- -->
+                                <div id="chart_cart">
+                                    <h3 id="h_3" id="today_section">Sales </h3>
+                                    <h3 id="h_31">  | Today</h3>
+                                    <div id="tots">
+                                        <i class="fa-solid fa-ellipsis tots"></i>
+                                    </div>
+                                </div> 
+
+                                <div class="chart_cart_i" >
+
+                                    <div id="chart_cart_i" style="display: flex;">
+
+                                        <div id="chart_cart_img">
+                                            <div id="CHAR">
+                                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                            </div>
+                                        </div>
+                                  
+                                        <div id="CHAR_NAME">
+                                            <h1>145</h1>
+                                         <div id="pres" style="color: rgb(4, 88, 4); font-size: 23px;">
+                                            <p>12% </p>
+                                            <p style="color: gray; margin-left: 9px; font-size: 23px;margin-top: -4px;">increase</p>
+                                         </div>
+                                       </div>    
+                                    </div><!-- -------------------------#chart_cart_i------------------- -->  
+                                </div><!-- -------------------------.chart_cart_i------------------- -->
+
+                            </div><!-- -------------------------#chart_cart_1------------------- -->
+                                 
+
+                            <div id="chart_cart_1"> <!-- -------------------------2box------------------- -->
+                                <div id="chart_cart">
+                                    <h3 id="h_3" id="today_section">Revenue </h3>
+                                    <h3 id="h_31">  | This month</h3>
+                                    <div id="tots1">
+                                        <i class="fa-solid fa-ellipsis tots1"></i>
+                                    </div>
+                                </div> 
+
+                                <div class="chart_cart_i" >
+
+                                    <div id="chart_cart_i" style="display: flex;">
+
+                                        <div id="chart_cart_img">
+                                            <div id="CHAR" >
+                                                <a href="#"><i class="fa-solid fa-dollar-sign"></i></a>
+                                            </div>
+                                        </div>
+                                  
+                                        <div id="CHAR_NAME">
+                                            <h1>$3,264</h1>
+                                         <div id="pres" style="color: rgb(4, 88, 4); font-size: 23px;">
+                                            <p>8% </p>
+                                            <p style="color: gray; margin-left: 9px; font-size: 23px; margin-top: -5px;">increase</p>
+                                         </div>
+                                       </div>    
+                                    </div><!-- -------------------------2box-#chart_cart_i------------------- -->  
+                                </div><!-- -------------------------2box-.chart_cart_i------------------- -->
+
+                            </div><!-- -------------------------#chart_cart_1------------------- -->
+                                 
+                         </div><!-- -------------------------.chart_cart_1------------------- -->
+
+            <!-- ------------------------------3box--------------------------------------->
+
+            <div id="chart_board">
+                <div class="chart_board">
+                   <div id="chart_boa1">
+                        <h3 id="h_3">Custoomers </h3>
+                        <h3 id="h_31">  | This Year</h3>
+                        <div id="tots2">
+                            <i class="fa-solid fa-ellipsis tots2"></i>
+                       </div>
+                   </div>
+                      
+                   <div class="chart_cart_i">
+                    <div id="chart_cart_i">
+                       <div id="chart_cart_img">
+                            <div id="CHAR1">
+                                <a href="#"><i class="fa-solid fa-user-group"></i></a>
+                            </div>
+
+                            <div id="CHAR_NAME1">
+                            
+                                   <h1>1244</h1>
+                                <div id="pres" style="color: rgb(217, 55, 55); font-size: 23px; font-weight: 3px;">
+                                   <p>12% </p>
+                                   <p style="color: gray; margin-left: 9px; font-size: 23px;">decrease</p>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div> <!-- ------------------------------3box-.chart_cart_i-------------------------------------->
+            </div>   <!-- ------------------------------3box-.chart_board--------------------------------------->
+
+        </div>   <!-- ------------------------------3box-#chartboard--------------------------------------->
+
+        <div class="chart_grap"> <!-- ------------------------------4box-.chart_grap--------------------------------------->
+            <div id="chart_grap-0-1">
+                <div id="chart_grap-1-0-1">
+                    <h3 id="h_3">Reports</h3>
+                    <h3 id="h_31">  / Today</h3>
+                    <div id="tots3">
+                        <i class="fa-solid fa-ellipsis tots3"></i>
+                   </div>
+               </div>
+               <div class="card-1-0">
+                  <div class="card-content">
+                      <div id="line-chart"></div>
+                  </div>
+               </div>
+        
+            </div>
+        </div><!-- ------------------------------4box-.chart_grap end--------------------------------------->
+
+    <!-- ----------------------------box5--------------------------------------------->
+    <div id="chart_search_product">
+        <div class="chart_search_product">
+
+            <div id="chart_search">
+                <h3 id="h_3">Revenue </h3>
+                <h3 id="h_31">  | This month</h3>
+                <div id="tots4">
+                    <i class="fa-solid fa-ellipsis tots4"></i>
+                </div>
+            </div> 
+
+            <div id="chart_option"> 
+                 
+                <div class="chart_option">
+    
+                    <div class="chart_option">
+                        <select name="numbers" id="numbers">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="All" selected>All</option>
+                        </select>
+                          <h2>entries per page</h2> 
+                          <div>
+                         <input type="text" placeholder="   Search...." id="is"> 
+                        </div>
+                    </div> 
+    
+                </div>
+    
+             </div>
+
+
+
+             
+        <div id="chart_option_ud">
+            <div class="chart_option_ud">
+              <div>
+                <h3>#</h3>
+              </div>
+              <div id="ud">
+                <i class="fa-solid fa-caret-up"></i>
+                <i class="fa-solid fa-caret-down down-00"></i>
+              </div>
+            </div>
+            
+            
+            <div class="chart_option_ud01">
+                <div>
+                 <h3>Customer</h3>
+                </div>
+                <div id="ud">
+                 <i class="fa-solid fa-caret-up up-02"></i>
+                 <i class="fa-solid fa-caret-down down-02"></i>
+                </div> 
+            </div>
+
+            <div class="chart_option_ud02">
+                <div>
+                 <h3>Product</h3>
+                </div>
+                <div id="ud">
+                 <i class="fa-solid fa-caret-up up-03"></i>
+                 <i class="fa-solid fa-caret-down down-03"></i>
+                </div>
+             </div>
+
+            <div class="chart_option_ud">
+                <div>
+                 <h3>Price</h3>
+                </div>
+                <div id="ud">
+                 <i class="fa-solid fa-caret-up"></i>
+                 <i class="fa-solid fa-caret-down down-00"></i>
+                </div>
+            </div> 
+
+            <div class="chart_option_ud">
+                <div>
+                 <h3>Status</h3>
+                </div> 
+                <div id="ud">
+                 <i class="fa-solid fa-caret-up"></i>
+                 <i class="fa-solid fa-caret-down down-00"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+          <!----big in 4-1-3cont----->   
+
+<div id="chart_option_options"> 
+
+    <div class="chart_option_options">
+        <h3 style="margin-left: -8px;">#2457</h3>
+        <h2>Brandon Jacob</h2>
+        <p>At praesentium minus</p>
+        <h4 style="font-size:1.5rem;margin-left:13px;">$64</h4>
+        <button style=" margin-left: 28px;">Approved</button>
+    </div>
+   
+    <div class="chart_option_options01">
+        <h3>#2147</h3>
+        <h2 style="font-size: 25px;">Bridie Kessler</h2>
+        <p>Blanditiis dolor omnis <br>similique</p>
+        <h4 style="font-size:1.5rem; margin-left:30px;">$47</h4>
+        <button>Pending</button>
+     </div>
+
+    <div class="chart_option_options02">
+        <h3>#2049</h3>
+        <h2  style="font-size: 25px;">Ashleigh <br>Langosh</h2>
+        <p>At recusandae consectetur</p>
+        <h4 style="font-size:1.5rem;     margin-left: -11px;">$147</h4>
+        <button>Approved</button>
+    </div>
+
+    <div class="chart_option_options03">
+        <h3>#2644</h3>
+        <h2 style="font-size: 25px;">Angus Grady</h2>
+        <p>Ut voluptatem id earum et</p>
+        <h4 style="font-size:1.5rem; margin-left: -11px;">$67</h4>
+        <button>Rejected</button>
+    </div>
+
+    <div class="chart_option_options">
+        <h3>#2644</h3>
+        <h2>Raheem Lehner</h2>
+        <p style="margin-left: -16px;">Sunt similique distinctio</p>
+        <h4 style="font-size:1.5rem; ">$165</h4>
+        <button style=" margin-left:24px;">Approved</button>
+    </div>
+    
+</div> 
+<div id="not-found" style="display: none;" >
+    <h3> No results match your search query</h3>
+</div>
+
+<div id="lines_02"> </div>
+
+ <div id="lines_03">
+    <h3>Showing 1 to 5 entries</h3>
+ </div>
+<div id="Showing-1">
+
+</div>
+
+</div><!-- -------------------------box5-.chart_search_product------------------- -->
+</div><!-- -------------------------box5-#chart_search_product------------------- -->
+
+<div id="cat">
+    <div class="cat">
+
+      <div id="chart_search">
+          <h3 id="h_3">Top Selling </h3>
+          <h3 id="h_31">  | Today</h3>
+          <div id="tots4">
+            <i class="fa-solid fa-ellipsis tots4"></i>
+          </div>
+      </div> 
+      
+      <div id="prouds-1">
+          <div class="prouds-1">
+            <div id="prouds-1-1">
+              <h3 style="margin-left: -11px;">Preview</h3>
+              <h3>Product</h3>
+           </div>
+
+           <div id="prouds-1-2">
+              <h3 style=" margin-left: 6px;">Price</h3>
+              <h3>Sold</h3>
+              <h3 style=" margin-left: -13px;">Revenue</h3>
+           </div>
+
+          </div>
+      </div>
+       
+      <div id="prouds-2">
+
+          <div class="chart_option_prounds">
+             <img src="./img/product-1.jpg" alt="#">
+              <p>Ut inventore ipsa voluptas nulla</p>
+              <h4>$64</h4>
+              <h3>124</h3>
+              <h2>$5,828</h2>
+          </div>
+          
+          <div class="chart_option_prounds">
+              <img src="./img/product-2.jpg" alt="#">
+               <p>Exercitationem similique doloremque</p>
+               <h4 style=" margin-left:84px;">$46</h4>
+               <h3>98</h3>
+               <h2 style="margin-left:59px;">$4,508</h2>
+           </div>
+
+           <div class="chart_option_prounds">
+              <img src="./img/product-3.jpg" alt="#">
+               <p>Doloribus nisi exercitationem</p>
+               <h4 style="margin-left: 176px;">$59</h4>
+               <h3>74</h3>
+               <h2 style="margin-left: 59px;">$4,366</h2>
+           </div>
+
+
+           <div class="chart_option_prounds">
+              <img src="./img/product-4.jpg" alt="#">
+               <p >officiis quaerat sint rerum error</p>
+               <h4 style="margin-left: 160px;">$32</h4>
+               <h3>63</h3>
+               <h2 style="margin-left:54px;">$2,016</h2>
+           </div>
+
+           <div class="chart_option_prounds">
+              <img src="./img/product-5.jpg" alt="#">
+               <p>Sit unde detitis delectus repellendus </p>
+               <h4  style="margin-left: 107px;">$79</h4>
+               <h3>41</h3>
+               <h2 style="margin-left:56px;">$3,239</h2>
+
+               <div id="Showing-1">
+
+               </div>
+           </div>
+
+           
+
+      </div>
+
+    </div>
+ </div>
+</div><!-- -------------------------.chart_one end------------------- -->
+                      
+<div id="chart_grap_right1">
+    <div class="chart_grap_right1">
+
+        <div id="chart_grap_right">
+            <h3 id="h_3" id="today_section">Recent Activity</h3>
+            <h3 id="h_31">  | Today</h3>
+            <div id="tots_right">
+                <i class="fa-solid fa-ellipsis tots_right"></i>
+           </div>
+       </div>
+
+       <div id="timeline">
+
+       </div>
+
+       <div id="chart_grap_timline">
+
+        <div class="chart_grap_timline">
+           <h3>32 min</h3>
+           <div id="timeline_1"></div>
+           <div>
+            <p>Qaia quae rerum</p>
+            <p style="font-weight: bolder;margin-top: -23px;">explicabo officiis</p>
+            <p style="margin-top: -23px;">beatae</p>
+          </div>
+        </div>
+
+        <div class="chart_grap_timline1">
+            <h3>56 min</h3>
+            <div id="timeline_2"></div>
+            <div>
+             <p>Voluptatem blanditiis</p>
+             <p style="margin-top: -21px;">blanditiis eveniet</p>
+
+           </div>
+         </div>
+
+         <div class="chart_grap_timline2">
+            <h3>2 hrs</h3>
+            <div id="timeline_3"></div>
+            <div>
+             <p>Voluptates corrupti</p>
+             <p style="    margin-top: -24px;">molestias voluptatem</p>
+
+           </div>
+         </div>
+
+         <div class="chart_grap_timline2">
+            <h3>1 day</h3>
+            <div id="timeline_3" style="margin-left:17px; background-color: rgb(0, 187, 255);"></div>
+            <div>
+             <p>Tempore auttem saepe</p>
+             <p style="font-weight: bolder; margin-top: -27px;">occaecati voluptatem</p>
+             <p style="    margin-top: -26px;">rempore</p>  
+           </div>
+         </div>
+
+         <div class="chart_grap_timline2">
+            <h3>2 days</h3>
+            <div id="timeline_3" style="margin-left:4px; background-color: orange;"></div>
+            <div>
+             <p>Est sit eum reiciendis</p>
+             <p style="    margin-top: -27px;">exercitationem</p>
+             
+           </div>
+         </div>
+
+         <div class="chart_grap_timline2">
+            <h3>4 weeks</h3>
+            <div id="timeline_3" style="margin-left:-13px ;background-color: black;"></div>
+            <div>
+             <p>Dicta dolorem harum</p>
+             <p style="    margin-top: -23px;">nulla eius. Ut quidem</p>
+             <p style="    margin-top: -29px;">quidem sit quas</p>
+             <p style="color: white;">dhsbfisd</p>
+             
+           </div>
+         </div>
+
+
+   </div>
+  
+    </div>
+
+    <div class="chart_grap_right02">
+        <div id="Budget-Report">
+          <div id="chart_grap_right02" style="display: flex;">
+              <h3 id="h_3">Budget Report</h3>
+              <h3 id="h_31">  | This Month</h3>
+              <div id="tots_right02">
+                <i class="fa-solid fa-ellipsis tots_right02"></i>
+             </div>
+         </div>
+      </div>
+
+      <div class="legend-buttons">
+          <div style="display: flex;"><button id="toggleBudget" class="budget-btn active"></button> <h3 style="font-size: 20px;">Allocated Budget</h3></div>
+          <div style="display: flex;  margin-top: -3px;"><button id="toggleSpending" class="spending-btn active"></button><h3 style="font-size: 20px;">Actual Spending</h3></div>
+      </div>
+      <div class="chart-container">
+          <canvas id="budgetChart"></canvas>
+      </div>
+
+     </div> 
+
+
+     <div id="chart_grap_right03">
+        <div id="Budget-Report">
+            <div class="chart_grap_right03">
+                <h3 id="h_3">Website Traffic</h3>
+                <h3 id="h_31">  | Today</h3>
+                <div id="tots_right03">
+                    <i class="fa-solid fa-ellipsis tots_right03"></i>
+               </div>
+           </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+            <div id="chartText">Search Engine</div> 
+        </div>
+
+       </div>
+
+
+
+
+   
+       <div id="chart_grap_right04">
+        <div id="Budget-Report">
+            <div class="chart_grap_right03">
+                <h3 id="h_3">New & Updates</h3>
+                <h3 id="h_31">  | Today</h3>
+                <div id="tots_right04">
+                    <div class="btn-group" style="    margin-left: -114px;">
+                        <span class="custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li id="four">hello</li>
+                            <li><a class="dropdown-item" href="#" style="color: gray;font-size: 24px;">Filter</a></li>
+                            <li><a class="dropdown-item" href="#">Today</a></li>
+                            <li><a class="dropdown-item" href="#">This Month</a></li>
+                            <li><a class="dropdown-item" href="#">This Year</a></li>
+                        </ul>
+                      </div>
+               </div>
+           </div>
+        </div>
+
+        <div id="product_img_p">
+
+            <div  class="product_img_p">
+               <img src="./img/product-img-1.jpg" alt="#">
+               <div id="p-1-5">
+                 <h3>Nihil blanditiie at in <br> nihil autem</h3>
+                 <p style="    margin-top: 10px;"> Sit recusandae non</p>
+                 <p>aspernatur</p>
+                 <p>laboriosam. Quia enima</p>
+                 <p>eligendi sed ut</p>
+                 <p>harum...</p>
+               </div>
+            </div>
+
+            <div  class="product_img_p">
+                <img src="./img/product-img-2.jpg" alt="#">
+                <div>
+                  <h3>Quidem autem et <br> impedit</h3>
+                  <p style="    margin-top: 10px;">Illo nemo neque</p>
+                  <p>mariores vitae oficiis</p>
+                  <p>Cum eum turos elan</p>
+                  <p>dries werona nande...</p>
+                </div>
+             </div>
+
+             <div  class="product_img_p">
+                <img src="./img/product-img-3.jpg" alt="#">
+                <div>
+                  <h3>Id quia et et ut <br> maxime similique <br> occaecati ut</h3>
+                  <p style="    margin-top: 10px;">Fugiat voluptas vero</p>
+                  <p>eaque accusantium</p>
+                  <p>eos.Consequuntur</p>
+                  <p>sed ipsam et totam...</p>
+                  
+                </div>
+             </div>
+
+             <div  class="product_img_p">
+                <img src="./img/product-img-4.jpg" alt="#">
+                <div>
+                  <h3>Laborum corporis<br>quo dara net para</h3>
+                  <p style="    margin-top: 10px;">Qui enim quia optio.</p>
+                  <p>Eilligendi aut asperiores</p>
+                  <p>enim repellendusvel</p>
+                  <p>rerum cuder...</p>
+                </div>
+             </div>
+
+             <div  class="product_img_p">
+                <img src="./img/product-img-5.jpg" alt="#">
+                <div>
+                  <h3>Et dolores corrupti <br>quea illo quod dolor</h3>
+                  <p style="    margin-top: 10px;">Odit ut eveniet modie</p>
+                  <p>reiciendis.Atque</p>
+                  <p>Cupiditate libero</p>
+                  <p>beatae dignission</p>
+                  <p>enius...</p>
+                </div>
+             </div>
+
+             <div  class="product_img_p">
+                <img src="./img/product-img-6.jpg" alt="#">
+                <div>
+                  <h3>Et dolores corrupti <br>quea illo quod dolor</h3>
+                  <p style="    margin-top: 10px;">Odit ut eveniet modie</p>
+                  <p>reiciendis.Atque</p>
+                  <p>Cupiditate libero</p>
+                  <p>beatae dignission</p>
+                  <p>enius...</p>
+                </div>
+             </div>
+
+             
+        </div>
+    </div>
+
+</div><!-- -------------------------#chart_grap_right1------------------- -->
+
+ </div><!-- -------------------#chart_one end------------------>
+
+ </div> <!-- ----------------end homepage----------- -->
+</div>  <!-- ---------end main------------- -->                 
+</div>
+
+    
+         
+<footer>
+    <hr style="color: #3d3dec;">
+    <div id="footer" style="display: flex; color: #3d3dec;justify-content: center;">
+        <h2 style="text-align: center;color: #3d3dec;">C</h2>
+        <h1 style="font-size:20px;margin-left:4px;">CopyRight</h1>
+        <h1 style="font-size:20px;margin-left:10px;color: #070751;">NiceAdmin.</h1>
+        <h1 style="font-size:20px;">All Right Reserved</h1>
+    </div>
+    <div style="text-align: center;">
+        <h1 style="font-size: 20px; color: #3d3dec;">Designer By BootstrapMade</h1>
+    </div>
+    </footer>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     <script src="bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+
+   const toggler = document.querySelector(".toggler-btn");
+const sidebar = document.querySelector("#sidebar");
+
+// Function to toggle sidebar
+function toggleSidebar() {
+    sidebar.classList.toggle("collapsed");
+
+    // Save state to localStorage
+    if (sidebar.classList.contains("collapsed")) {
+        localStorage.setItem("sidebarState", "collapsed");
+    } else {
+        localStorage.setItem("sidebarState", "expanded");
+    }
+}
+
+// Event listener for the toggle button
+toggler.addEventListener("click", toggleSidebar);
+
+// Check localStorage on page load
+document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("sidebarState") === "collapsed") {
+        sidebar.classList.add("collapsed");
+    }
+});
+
+// --------------------------------graph------------------------------------------------------
+var chartOptions = {
+  chart: {
+    height: 410,
+    width:"110%",
+    type: 'line',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    foreColor: '#6E729B',
+    toolbar: {
+      show: false,
+    },
+  },
+  stroke: {
+    curve: 'smooth',
+    width: 2,
+  },
+  series: [
+    {
+      name: 'Sales',
+      data: [30, 40, 28, 50, 42, 82, 55],
+    },
+    {
+      name: 'Revenue',
+      data: [10, 32, 45, 32,34 , 52,40 ],
+    },
+    {
+      name: 'Customer',
+      data: [15, 11, 32, 28, 12, 24,10],
+    },
+  ],
+  
+  markers: {
+    size: 6,
+    strokeWidth: 0,
+    hover: {
+      size: 9,
+    },
+  },
+  grid: {
+    show: true,
+    padding: {
+      bottom: 0,
+    },
+  },
+  labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00'],
+  xaxis: {
+    tooltip: {
+      enabled: false,
+    },
+  },
+  legend: {
+    position: 'bottom',
+    horizontalAlign: 'center',
+    offsetY: -2,
+    labels: {
+      colors: '#373d3f',
+    },
+  },
+  grid: {
+    borderColor: '#D9DBF3',
+    xaxis: {
+      lines: {
+        show: true,
+      },
+    },
+  },
+};
+
+var lineChart = new ApexCharts(document.querySelector('#line-chart'), chartOptions);
+lineChart.render();
+
+
+// --------------------------------search------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+    let searchInput = document.getElementById("is");
+
+    if (!searchInput) {
+        console.error("Element with ID 'is' not found!");
+        return;
+    }
+
+    searchInput.addEventListener("keyup", function () {
+        let searchValue = this.value.toLowerCase().trim(); // Get input value
+        let items = document.querySelectorAll(".chart_option_options, .chart_option_options01, .chart_option_options02, .chart_option_options03");
+        let found = false;
+
+        items.forEach(item => {
+            let text = item.innerText.toLowerCase();
+            if (text.includes(searchValue)) {
+                item.style.display = "flex"; // Show matching items
+                found = true;
+            } else {
+                item.style.display = "none"; // Hide non-matching items
+            }
+        });
+
+        let entriesDiv = document.getElementById("lines_03");
+        let notFoundDiv = document.getElementById("not-found");
+
+        if (!entriesDiv || !notFoundDiv) {
+            console.error("Missing 'lines_03' or 'not-found' div.");
+            return;
+        }
+
+        if (!found) {
+            entriesDiv.style.display = "none"; // Hide "Showing X entries"
+            notFoundDiv.style.display = "block"; // Show "No results found"
+        } else {
+            entriesDiv.style.display = "block"; // Show "Showing X entries"
+            notFoundDiv.style.display = "none"; // Hide "No results found"
+        }
+    });
+});
+
+// -----------------------------------ratar chart------------------------------------
+
+
+const ctx = document.getElementById('budgetChart').getContext('2d');
+
+        const chartData = {
+            labels: ['Sales', 'Marketing', 'Development', 'Customer Support', 'Technology', 'Operations'],
+            datasets: [
+                {
+                    label: 'Allocated Budget',
+                    data: [35, 38, 49, 47, 35, 10],
+                    borderColor: 'blue',
+                    backgroundColor: 'rgba(0, 0, 255, 0.2)',
+                    pointBackgroundColor: 'blue',
+                    pointBorderColor: 'blue',
+                    hidden: false, // Initially visible
+                },
+                {
+                    label: 'Actual Spending',
+                    data: [40, 42, 40, 35, 48, 45],
+                    borderColor: 'green',
+                    backgroundColor: 'rgba(0, 128, 0, 0.2)',
+                    pointBackgroundColor: 'green',
+                    pointBorderColor: 'green',
+                    hidden: false, // Initially visible
+                }
+            ]
+        };
+
+        const chart = new Chart(ctx, {
+            type: 'radar',
+            data: chartData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }, // Hide default legend
+                },
+                scales: {
+    r: {
+        min: 0,  // Start from 10 instead of 0
+        max: 50,  // Set max to 50
+        ticks: {
+            stepSize: 10 // Ensure increments of 10 (10, 20, 30, etc.)
+        }
+    }
+  }
+            }
+        });
+
+        // Toggle button functions
+        function toggleDataset(index, button) {
+            chart.data.datasets[index].hidden = !chart.data.datasets[index].hidden;
+            if (chart.data.datasets[index].hidden) {
+                button.classList.remove('active');
+                button.classList.add('inactive');
+            } else {
+                button.classList.remove('inactive');
+                button.classList.add('active');
+            }
+            chart.update();
+        }
+
+        document.getElementById('toggleBudget').addEventListener('click', function () {
+            toggleDataset(0, this);
+        });
+
+        document.getElementById('toggleSpending').addEventListener('click', function () {
+            toggleDataset(1, this);
+        });
+
+
+   // --------------------------------------------circle----------------------------------------
+   const ctx1 = document.getElementById('myChart').getContext('2d');
+const chartText = document.getElementById('chartText');
+
+let originalColors = ['#4169E1', '#32CD32', '#FFD700', '#FF4500', '#87CEFA']; // Original colors
+let grayColor = '#D3D3D3'; // Gray when off
+let defaultValues = [30, 25, 20, 15, 10]; // Original values
+
+const data = {
+    labels: ['Search Engine', 'Direct', 'Email', 'Union Ads', 'Video Ads'],
+    datasets: [{
+        data: [...defaultValues],
+        backgroundColor: [...originalColors]
+    }]
+};
+
+const config = {
+    type: 'doughnut',
+    data: data,
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: true,
+                onClick: (e, legendItem, legend) => {
+                    let dataset = legend.chart.data.datasets[0];
+                    let index = legendItem.index;
+
+                    // Toggle data visibility (0 hides, restores original value when clicked again)
+                    dataset.data[index] = dataset.data[index] ? 0 : defaultValues[index];
+
+                    // Change color to gray when turned off, restore original color when turned on
+                    dataset.backgroundColor[index] = dataset.data[index] ? originalColors[index] : grayColor;
+
+                    // Find the last hidden section and update text
+                    let activeSections = dataset.data.filter(value => value > 0);
+                    let hiddenIndices = dataset.data.map((value, i) => value === 0 ? i : null).filter(i => i !== null);
+                    let lastHiddenIndex = hiddenIndices.length > 0 ? hiddenIndices[hiddenIndices.length - 1] : null;
+
+                    if (dataset.data[index] !== 0) {
+                        chartText.textContent = ''; // Hide text when toggled ON
+                    } else {
+                        if (activeSections.length > 0) {
+                            chartText.textContent = data.labels[lastHiddenIndex]; // Show last hidden section name
+                        } else {
+                            chartText.textContent = ''; // Hide when all are ON
+                        }
+                    }
+
+                    legend.chart.update();
+                }
+            }
+        }
+    }
+};
+
+// Create Chart
+new Chart(ctx1, config);
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web needhelp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./taskweb.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 4em;">
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand boarder-bottom">
+                <button class="toggler-btn" type="button">
+                 <i class="fa-solid fa-bars"></i>
+                </button>
+             </nav>
+
+            <form class="d-flex" role="search" style="width: 17%; margin-left: -33em;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: unset;">
+                <i class="fa-solid fa-magnifying-glass" id="ico2"></i>
+            </form>
+       <div>
+         
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+             <li class="nav-item dropdown-1" id="notic">
+                    <a class="nav-link dropdown-toggle notification-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" margin-top: 9px; font-weight: 600;   color: rgb(8, 8, 85);">
+                        <div class="count">+4</div>
+                        <i class="fa-sharp fa-regular fa-bell" id="ico3"></i>
+                    </a>
+                    
+                    <ul class="dropdown-menu" style="margin-left:-15rem; margin-top:3px; border-radius:2px; width:22rem; border: unset;  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                        <li><div id="b-o-x">hello</div></li>
+
+                    <li><a class="dropdown-item" href="#">
+                        <h5 style="text-align: center; color: rgb(6, 6, 65);font-size:17px;">You have 4 new notification 
+                            <button style="background-color: blue; color:white;border-radius:23px;margin-top: 2px;height:33px;width:78px;">view all</button></h5>
+                    </li>
+
+                    <li><hr class="dropdown-divider" style="margin-left:-18px;width:111%;"></li>
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-circle-exclamation"></i>Lorem ipsum</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">30 mins. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-regular fa-circle-xmark"></i>Atque rerum nesciunt</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">1 hr. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                   <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                    <i class="fa-regular fa-circle-check"></i>Site rerum fuga</a>
+                         <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                         <div style="margin-top:-14px;margin-left:70px;">2 hrs. ago </div>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" id="wp" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-circle-info"></i>Site rerum fuga</a>
+                             <p style="margin-top: -13px;margin-left: 70px;">Dolor amet consectetur adipisicing</p>
+                             <div style="margin-top:-14px;margin-left:70px;">2 hrs. ago </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                     <a href="#" id="show1" style="margin-left:103px;color: black;font-size:20px;">show all notification</a>
+                    
+                    </ul>
+          </li>
+         
+
+          <li class="nav-item dropdown-1" id="mess">
+            <a class="nav-link dropdown-toggle notification-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;color: rgb(8, 8, 85);">
+                <div class="count1">+3</div>
+                <i class="fa-regular fa-message" id="ico4"></i>
+            </a>
+            
+            <ul class="dropdown-menu" style="margin-left:-16rem; margin-top:3px; border-radius:2px; width:23rem; border: unset;filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                <li><div id="b-o-x">hello</div></li>
+
+            <li><a class="dropdown-item" href="#">
+                <h5 style="text-align: center; color: rgb(6, 6, 65);font-size:17px;">You have 3 new notification 
+                    <button style="background-color: blue; color:white;border-radius:23px;margin-top: 2px;height:33px;width:78px;">view all</button></h5>
+            </li>
+
+            <li><hr class="dropdown-divider" style="margin-left:-18px;width:111%;"></li>
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top: -18px;">
+                <img src="./img/photo2.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">4 hrs. ago  </div>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top:-2px;">
+                <img src="./img/photo3.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">6 hrs. ago  </div>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" id="one_mess" href="#" style="color:gray; font-size:25px;display:flex;gap:23px;margin-top:0px;">
+                <img src="./img/photo1.jpg" alt="#" style="border-radius:49px; width: 86px; height:80px;margin-top:4px;margin-left:1px;">
+                Maria Hudson</a>
+                 <p style="margin-top:-52px;margin-left:126px;font-size:17px;">Velit asperiores et ducimus soluta</p>
+                 <p style="margin-top:-19px;margin-left:125px;font-size:17px;">repudiandae Labor office est ut...</p>
+                 <div style="margin-top:-15px;margin-left:125px;color: black;font-size: 15px;">8 hrs. ago  </div>
+            </li>
+            
+                <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+             <a href="#" id="show1" style="margin-left:103px;color: black;font-size:20px;">show all notification</a>
+            
+            </ul>
+  </li>
+
+
+              <li class="nav-item pic">
+                <img src="./img/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig - Copy.jpg" class="pic">
+              </li>
+
+              
+
+              <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 9px; font-weight: 600;   color: rgb(8, 8, 85);">
+                            k. Anderson
+                        </a>
+                        
+                        <ul class="dropdown-menu" style="margin-left:-12rem; margin-top:3px; border-radius:2px; width: 18rem; border: unset;  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.54));">
+                            <li><div id="b-o-x">hello</div></li>
+
+                        <li><a class="dropdown-item" href="#">
+                            <h1 style="font-size:25px; text-align: center; color: rgb(6, 6, 65);">Kevin Anderson</h1>
+                            <h3 style="font-size:20px;color: gray;text-align: center;">Web Designer</h3></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./taskmyprofile.html" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-regular fa-user"></i>My Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-solid fa-gear"></i>Account Setting</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./taskneedhelp.html" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                            <i class="fa-regular fa-circle-question"></i>Neeed Help?</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" style="color:gray; font-size:25px;gap:20px;display:flex;gap: 23px;">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>Sing Out</a></li>
+                        
+                        </ul>
+              </li>
+             
+            </ul>
+        </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    <!-------sidebar------->
+      <div class="s-i-d " style="display: flex;" >
+
+         <aside id="sidebar" style="overflow-y:scroll;height:650%;">
+           
+            <ul class="sidebar-nav p-0">
+               
+                
+               <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                  <i class="fas fa-qrcode"></i>  
+                  <span>Dashboard</span></a>
+                </li>
+                
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#comp" 
+                    aria-expanded="true" aria-controls="comp">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Components</span>
+                    </a>
+                    <ul id="comp" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Alerts</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">According</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Badges</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Breadcrumbs</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Buttons</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Cards</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Carousel</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">List group</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Modal</a>
+                        </li>
+
+                    </ul>
+                 </li>
+             
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#form" 
+                    aria-expanded="true" aria-controls="form">
+                    <i class="fa-solid fa-file"></i>
+                    <span>Form</span>
+                    </a>
+                    <ul id="form" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Form Element</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Layouts</a>
+                        </li>
+                       
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Editors</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">From Validation</a>
+                        </li>
+
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Tables" 
+                    aria-expanded="true" aria-controls="forms">
+                    <i class="fa-solid fa-table"></i>
+                    <span>Tables</span>
+                    </a>
+                    <ul id="Tables" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">General Tables</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Data Tablesr</a>
+                          </li>
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#chart" 
+                    aria-expanded="true" aria-controls="chart">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Charts</span>
+                    </a>
+                    <ul id="chart" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Chart.js</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">ApexCharts</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">ECharts</a>
+                        </li>
+                    </ul>
+                 </li>
+
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#icon" 
+                    aria-expanded="true" aria-controls="icon">
+                    <i class="fa-regular fa-gem"></i>
+                    <span>Icons</span>
+                    </a>
+                    <ul id="icon" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#accordionExample">
+                        <li class="sidebar-item">
+                          <a href="#" class="sidebar-link">Bootstrap Icons</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Remix Iconsr</a>
+                          </li>
+
+                          <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Boxicons</a>
+                          </li>
+                    </ul>
+                 </li>
+                    
+
+                 <li class="sidebar-header" style="color: gray; font-size: 20px;">
+                    pages
+                </li> 
+
+                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-user"></i> 
+                    <span>Profile</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-question"></i> 
+                    <span>F.A.Q</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Contact</span></a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-file-pen"></i> 
+                    <span>Register</span></a>
+                </li>
+
+            </ul>
+         </aside>
+
+        <div class="main">
+            
+
+
+
+
+          <main class="p-3">
+            <div class="container-fluid">
+                <div class="mb-3 " >
+                    <h1 style="font-size:30px;color: rgb(18, 18, 78);">Frequently Asked Questions</h1>
+                    <div id="need">
+                        <a href="#">Home</a>  /
+                        <a href="#">Pages</a>  /
+                        <a href="#" style="color: gray;">Frequently Asked Questions</a>
+                    </div>
+                </div>
+
+             <div  id="hello">
+                  <div id="need_boxes">
+
+                    <div div class="masu">
+
+                        <div id="need_firstcont">
+                            <div>
+                               <h1>Basic Questions</h1>
+                            </div>
+                              <div class="q1">
+                                <h3>1. Nisi ut ut exercitationem voluptatem esse <br>   sunt rerum?</h3>
+                                <div class="q1an">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic,<br> consequatur, eligendi,
+                                      nihil unde a saepe excepturi magnam illo est reiciendis nesciunt fuga Tenet corporis quae ratione Tenetur corporis quae ratione Tenetur corporis quaeratione huijdnkfnh
+                                       reiciendis nemo! Tenetur corporis quae  </p>
+                                </div>
+                              </div>
+             
+             
+                              <div class="q1">
+                                 <h3>2. Reiciendis dolores repudiandae?</h3>
+                                 <div class="q1an">
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic,<br> consequatur, eligendi,
+                                         nihil unde a saepe excepturi magnam illo est reiciendis nesciunt fuga Tenet corporis quae ratione Tenetur corporis quae ratione Tenetur corporis quaeratione huijdnkfnh
+                                          reiciendis nemo! Tenetur corporis quae  </p>
+                                 </div>
+                               </div>
+             
+                               <div class="q1">
+                                <h3>3. Qui qui reprehenderit ut est illo numquam <br> voluptatem?</h3>
+                                <div class="q1an" style="padding:0px 0px 0px 0px ;">
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic,<br> eligendi,
+                                     nihil unde a saepe excepturi magnam illo est reiciendis<br>Tenetur corporis quae ratione Tenetur corporis quae   </p>
+                                </div>
+                              </div>
+                       </div>
+
+                      <div id="need_secondcont">
+                        <h1>Laborum dolorem quam porro</h1>
+                       <div class="accordion accordion-flush" id="accordionFlushExample ">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxone-collapseOne" 
+                            aria-expanded="false" aria-controls="boxone-collapseOne">
+                           Debitis adipisci eius?
+                            </button>
+                          </h2>
+                          <div id="boxone-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs...  </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxone-collapseTwo" 
+                            aria-expanded="false" aria-controls="boxone-collapseTwo">
+                                Omnis fugiat quis repellendus?
+                            </button>
+                          </h2>
+                          <div id="boxone-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs...  </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxone-collapseThree" a
+                            ria-expanded="false" aria-controls="boxone-collapseThree">
+                                Et occaecati praesentium aliquam modi incidunt?
+                            </button>
+                          </h2>
+                          <div id="boxone-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs...</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxone-collapseFour" 
+                              aria-expanded="false" aria-controls="boxone-collapseThree">
+                                Quo unde eaque vero dolor quis ipsam?
+                              </button>
+                            </h2>
+                            <div id="boxone-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs.... </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxone-collapseFive" 
+                              aria-expanded="false" aria-controls="boxone-collapseThree">
+                                Natus sunt quo atque mollitia accusamus?
+                              </button>
+                            </h2>
+                            <div id="boxone-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs...</div>
+                            </div>
+                          </div>
+                      </div>
+                   </div>
+        
+                </div>
+            </div>
+
+            <div id="need_boxes2">
+                  
+                
+                <div id="need_thirdcont">
+                    <h1>Deserunt ut unde Corporise</h1>
+                   <div class="accordion accordion-flush" id="accordionFlushExample ">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxtwo-collapseOne" 
+                        aria-expanded="false" aria-controls="boxtwo-collapseOne">
+                            Cumque voluptatem recusandae blanditiis?
+                        </button>
+                      </h2>
+                      <div id="boxtwo-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs... </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxtwo-collapseTwo" 
+                        aria-expanded="false" aria-controls="boxtwo-collapseTwo">
+                            Provident beatae eveniet placeat est aperiam repellat <br> adipisci?
+                        </button>
+                      </h2>
+                      <div id="boxtwo-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs...  </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxtwo-collapseThree" 
+                        aria-expanded="false" aria-controls="boxtwo-collapseThree">
+                            Minus aliquam modi id reprehenderit nihil?
+                        </button>
+                      </h2>
+                      <div id="boxtwo-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs... </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxtwo-collapseFour" 
+                          aria-expanded="false" aria-controls="boxtwo-collapseThree">
+                            Quaerat qui est iusto asperiores qui est reiciendis eos et?
+                          </button>
+                        </h2>
+                        <div id="boxtwo-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs... </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxtwo-collapseFive" 
+                          aria-expanded="false" aria-controls="boxtwo-collapseThree">
+                            Laboriosam asperiores eum?
+                          </button>
+                        </h2>
+                        <div id="boxtwo-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs... </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+
+
+
+
+
+               
+               <div id="need_fourcont" >
+                <h1>Laborum dolorem quam porro</h1>
+               <div class="accordion accordion-flush" id="accordionFlushExample ">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxthree-collapseOne" 
+                    aria-expanded="false" aria-controls="boxthree-collapseOne">
+                   Debitis adipisci eius?
+                    </button>
+                  </h2>
+                  <div id="boxthree-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body" style="font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs...  </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxthree-collapseTwo" 
+                    aria-expanded="false" aria-controls="boxthree-collapseTwo">
+                        Omnis fugiat quis repellendus?
+                    </button>
+                  </h2>
+                  <div id="boxthree-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs...  </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxthree-collapseThree" 
+                    aria-expanded="false" aria-controls="boxthree-collapseThree">
+                        Et occaecati praesentium aliquam modi incidunt?
+                    </button>
+                  </h2>
+                  <div id="boxthree-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs... </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxthree-collapseFour"
+                       aria-expanded="false" aria-controls="boxthree-collapseThree">
+                        Quo unde eaque vero dolor quis ipsam?
+                      </button>
+                    </h2>
+                    <div id="boxthree-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs... </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boxthree-collapseFive" 
+                      aria-expanded="false" aria-controls="boxthree-collapseThree">
+                        Natus sunt quo atque mollitia accusamus?
+                      </button>
+                    </h2>
+                    <div id="boxthree-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        corporis quae dghb  <br> sygydhb corporis quae ratione Tenetur ipsum dolor sit amet gsjdh uhsd hhh<br>easrtyqgb fyxzdfbhs... </div>
+                    </div>
+                  </div>
+              </div>
+           </div>
+
+            </div>
+
+
+
+            </div>
+         </main>
+
+      </div>
+
+    </div>
+
+    
+    <footer>
+      <hr style="color: #3d3dec;">
+      <div id="footer" style="display: flex; color: #3d3dec;justify-content: center;">
+          <h2 style="text-align: center;color: #3d3dec;">C</h2>
+          <h1 style="font-size:20px;margin-left:4px;">CopyRight</h1>
+          <h1 style="font-size:20px;margin-left:10px;color: #070751;">NiceAdmin.</h1>
+          <h1 style="font-size:20px;">All Right Reserved</h1>
+      </div>
+      <div style="text-align: center;">
+          <h1 style="font-size: 20px; color: #3d3dec;">Designer By BootstrapMade</h1>
+      </div>
+      </footer>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+
+   const toggler = document.querySelector(".toggler-btn");
+const sidebar = document.querySelector("#sidebar");
+
+// Function to toggle sidebar
+function toggleSidebar() {
+    sidebar.classList.toggle("collapsed");
+
+    // Save state to localStorage
+    if (sidebar.classList.contains("collapsed")) {
+        localStorage.setItem("sidebarState", "collapsed");
+    } else {
+        localStorage.setItem("sidebarState", "expanded");
+    }
+}
+
+// Event listener for the toggle button
+toggler.addEventListener("click", toggleSidebar);
+
+// Check localStorage on page load
+document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("sidebarState") === "collapsed") {
+        sidebar.classList.add("collapsed");
+    }
+});
+
+
+
+
+    </script>
+</body>
+</html>
